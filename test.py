@@ -101,17 +101,44 @@ s.theme_use('clam')
 s.configure('bb.TButton', background = 'white', padding = btnHeight)
 
 # Inserting widgets into the Frame
-for i in range(numRows):
-    for j in range(numCols):
-        print("Creating buttons")
-        counter = i*numCols+j+1
-        text = "Clip " + str(counter)
-        btn_pres = ttk.Button(frame, text = text, width = btnWidth)
-        btn_pres['style'] = 'bb.TButton'
-        # btn_pres['command'] = playClip(counter)
-        btn_pres.grid(row = i, column = j)
+# for i in range(numRows):
+#     for j in range(numCols):
+#         print("Creating buttons")
+#         counter = i*numCols+j+1
+#         text = "Clip " + str(counter)
+#         btn_pres = ttk.Button(frame, text = text, width = btnWidth)
+#         btn_pres['style'] = 'bb.TButton'
+#         btn_pres['command'] = lambda: playClip(counter)
+#         btn_pres.grid(row = i, column = j)
 
-btn_test = ttk.Button(frame, text = "TEST BUTTON", width = btnWidth)
+print("Finished making buttons")
+btn_clip1 = ttk.Button(frame, text = "Clip 1", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(1)).grid(row = 1, column = 1)
+btn_clip2 = ttk.Button(frame, text = "Clip 2", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(2)).grid(row = 1, column = 2)
+btn_clip3 = ttk.Button(frame, text = "Clip 3", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(3)).grid(row = 1, column = 3)
+btn_clip4 = ttk.Button(frame, text = "Clip 4", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(4)).grid(row = 1, column = 4)
+btn_clip5 = ttk.Button(frame, text = "Clip 5", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(5)).grid(row = 1, column = 5)
+btn_clip6 = ttk.Button(frame, text = "Clip 6", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(6)).grid(row = 2, column = 1)
+btn_clip7 = ttk.Button(frame, text = "Clip 7", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(7)).grid(row = 2, column = 2)
+btn_clip8 = ttk.Button(frame, text = "Clip 8", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(8)).grid(row = 2, column = 3)
+btn_clip9 = ttk.Button(frame, text = "Clip 9", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(9)).grid(row = 2, column = 4)
+btn_clip10 = ttk.Button(frame, text = "Clip 10", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(10)).grid(row = 2, column = 5)
+btn_clip11 = ttk.Button(frame, text = "Clip 11", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(11)).grid(row = 3, column = 1)
+btn_clip12 = ttk.Button(frame, text = "Clip 12", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(12)).grid(row = 3, column = 2)
+btn_clip13 = ttk.Button(frame, text = "Clip 13", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(13)).grid(row = 3, column = 3)
+btn_clip14 = ttk.Button(frame, text = "Clip 14", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(14)).grid(row = 3, column = 4)
+btn_clip15 = ttk.Button(frame, text = "Clip 15", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(15)).grid(row = 3, column = 5)
+btn_clip16 = ttk.Button(frame, text = "Clip 16", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(16)).grid(row = 4, column = 1)
+btn_clip17 = ttk.Button(frame, text = "Clip 17", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(17)).grid(row = 4, column = 2)
+btn_clip18 = ttk.Button(frame, text = "Clip 18", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(18)).grid(row = 4, column = 3)
+btn_clip19 = ttk.Button(frame, text = "Clip 19", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(19)).grid(row = 4, column = 4)
+btn_clip20 = ttk.Button(frame, text = "Clip 20", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(20)).grid(row = 4, column = 5)
+btn_clip21 = ttk.Button(frame, text = "Clip 21", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(21)).grid(row = 5, column = 1)
+btn_clip22 = ttk.Button(frame, text = "Clip 22", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(22)).grid(row = 5, column = 2)
+btn_clip23 = ttk.Button(frame, text = "Clip 23", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(23)).grid(row = 5, column = 3)
+btn_clip24 = ttk.Button(frame, text = "Clip 24", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(24)).grid(row = 5, column = 4)
+btn_clip25 = ttk.Button(frame, text = "Clip 25", width = btnWidth,style = 'bb.TButton',command = lambda: playClip(25)).grid(row = 5, column = 5)
+
+
 
 # Finalize the canvas details
 canvas.create_window(0, 0, anchor=NW, window=frame)
